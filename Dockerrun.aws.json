@@ -3,28 +3,28 @@
     "containerDefinitions": [
         {
             "name": "client",
-            "image": "karansuryadvera/multi-client",
+            "image": "karansuryadevra/multi-client",
             "hostname": "client",
             "essential": false,
             "memory": 128
         },
         {
             "name": "server",
-            "image": "karansuryadvera/multi-server",
+            "image": "karansuryadevra/multi-server",
             "hostname": "api",
             "essential": false,
             "memory": 128
         },
         {
             "name": "worker",
-            "image": "karansuryadvera/multi-worker",
+            "image": "karansuryadevra/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
             "name": "nginx",
-            "image": "karansuryadvera/multi-nginx",
+            "image": "karansuryadevra/multi-nginx",
             "essential": true,
             "portMappings": [
                 {
