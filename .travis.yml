@@ -17,7 +17,7 @@ after_success:
     #Login to docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     #push to docker hub
-    - docker push karansuryadevra/multi-client
+    - docker push karansuryadevra/multi-client:v2
     - docker push karansuryadevra/multi-nginx
     - docker push karansuryadevra/multi-server
     - docker push karansuryadevra/multi-worker
